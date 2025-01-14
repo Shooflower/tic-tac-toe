@@ -1,1 +1,1 @@
-A fun tic tac toe game! Hosted on netlify if you want to play: https://tttictactoe.netlify.app
+A fun tic tac toe game! Hosted on netlify if you want to play: https://tttic-tac-toe.netlify.app
