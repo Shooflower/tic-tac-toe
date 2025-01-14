@@ -1,0 +1,54 @@
+.gameboard {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 500px;
+}
+
+.field {
+    font-size: 2rem;
+    cursor: pointer;
+    height: 100%;
+    border: solid black 1px;
+    border-radius: 0;
+    background-color: white;
+}
+
+.field:hover {
+    background-color: seagreen;
+    color: white;
+}
+
+.gamestart, .decision--dropdown {
+    height: 75px;
+    width: 100px;
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px;
+    padding: 0;
+}
+
+.gamestart {
+    background-color: seagreen;
+    color: white;
+    width: 120px;
+}
+
+.restart {
+    background-color: seagreen;
+    color: white;
+    font-size: 2rem;
+    padding: 15px;
+    
+}
+
+.gamestart, .restart {
+    font-family: 'Arsenal SC';
+    cursor: pointer;
+}
+
+.decision {
+    margin-top: 50px;
+}

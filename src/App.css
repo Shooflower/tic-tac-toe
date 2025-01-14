@@ -1,0 +1,49 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  height: 100%;
+  width: 35%;
+}
+
+body {
+  background-color: seagreen;
+  font-family:'Doto';
+}
+
+.ttt-container {
+  background-color: white;
+  min-height: 750px;
+  border-radius: 10px;
+  padding: 25px;
+  padding-top: 10px;
+}
+
+.heading {
+  font-size: 3rem;
+}
+
+.emojis {
+  font-size: 1.5rem;
+  animation: 2s infinite alternate appear;
+  margin-bottom: 0px;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.instructions, .won-text {
+  margin-top: 30px;
+}
+
+.won-text {
+  font-size: 1.5em;
+}
