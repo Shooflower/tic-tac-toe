@@ -70,7 +70,7 @@ function App() {
   }
 
   function updateGameFields(field: Field, symbol: string){
-    console.log("Updating field...", field, symbol)
+    console.debug("Updating field...", field, symbol)
     if(!gameWon) {
       setGameFields(existingGameFields => {
         return existingGameFields.map(existingField => {
@@ -106,9 +106,7 @@ function App() {
       let foundEmptyField = false
       while(!foundEmptyField) {
         const randomPosition = getRandomPosition()
-        console.log(randomPosition, "position")
         const foundField = gameFields.find(field => field.position === randomPosition && field.value === "")
-        console.log("Found empty field: ", foundField)
         if(foundField) {
           foundEmptyField = true
           updateGameFields(foundField, player2Symbol)
@@ -136,7 +134,7 @@ function App() {
         <button className="restart" onClick={restartGame}>Play Again</button>
       </div>
       }
-      {gameStarted && !gameWon && 
+      {gameStarted && !gameWon && !gameOver &&
       <div>
         <h3 className="instructions">Click a square to make your move</h3>
         <button className="restart" onClick={restartGame}>Restart</button>

@@ -7,6 +7,12 @@
   min-width: 35%;
 }
 
+@media (min-width: 1200px) {
+  #root {
+    width: 45%;
+  }
+}
+
 body {
   background-color: seagreen;
   font-family:'Doto';
